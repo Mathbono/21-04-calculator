@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	height: 100vh;
+	line-height: 1.6;
+	font-size: 1.4em;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	background-image: url('assets/calculator-money.jpg');
+}
+a,
+a:hover,
+a:visited,
+a:active {
+	color: inherit;
+}
+
+main {
+	border: grey 5px groove;
+}
+#results {
+	width: 382px;
+	height: 100px;
+	overflow-y: scroll;
+	background-color: rgb(190, 190, 190);
+}
+#results > p {
+	margin: 0;
+}
+#results > p:first-child {
+	font-weight: bold;
+	font-size: 2em;
+}
+#results > p:nth-child(even) {
+	color: red;
+}
+#results > p:nth-child(odd) {
+	color: green;
+}
+input {
+	width: 382px;
+}
+#buttons {
+	background-color: grey;
+}
+button {
+	width: 60px;
+	margin: 2px 0;
+}
+#enter {
+	width: 125px;
+}
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: white;
+}
